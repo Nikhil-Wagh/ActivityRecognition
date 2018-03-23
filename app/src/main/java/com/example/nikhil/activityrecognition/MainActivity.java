@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
             @Override
             public void onClick(View v) {
                 if(Objects.equals(username.getText().toString(), "Group11") && Objects.equals(password.getText().toString(), "hitesh")) {
+                    Intent intent = new Intent(getApplicationContext(), logActivity.class);
+                    startActivity(intent);
                     mApiClient.connect();
                     Toast.makeText(MainActivity.this, "Logged In successfully", Toast.LENGTH_LONG).show();
                 }

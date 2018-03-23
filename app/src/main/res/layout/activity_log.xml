@@ -1,0 +1,62 @@
+<!--<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nikhil.activityrecognition.logActivity"
+    android:layout_margin="10dp"
+    >
+
+
+
+</android.support.constraint.ConstraintLayout>-->
+
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log"
+        android:textSize="20sp"
+        android:textColor="@color/wallet_link_text_light"
+        android:background="@color/wallet_dim_foreground_holo_dark"
+        android:gravity="center"
+        android:id="@+id/textLog"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/table1"
+            android:layout_below="@+id/textLog"
+            android:layout_marginTop="20dp">
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent">
+                <TextView
+                    android:text="Timestamp"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    />
+                <TextView
+                    android:text="Activity"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
